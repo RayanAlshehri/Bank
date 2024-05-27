@@ -10,6 +10,8 @@ This project provides basic bank management functionalities. It also includes an
 - ADO.NET
 - SQL Server
 
+[Screenshots](https://drive.google.com/drive/folders/1ZEqvEsZzd7U2GN9-4AkXcSVq4_VEv_vv?usp=drive_link)
+
 ## Set-up instructions
 [Download](https://drive.google.com/drive/folders/1wgP8IXj0I2wVZOTkfv93NdDqWeeW0tGv?usp=drive_link) the project and follow the instructions in the `README.txt` file.
 
