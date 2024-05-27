@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F1CE977-1537-4583-9945-651280481091}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bank_Presentation_Tier</RootNamespace>
+    <AssemblyName>Bank Presentation Tier</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminsScreenForms\frmAdminsLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmAdminsLogins.Designer.cs">
+      <DependentUpon>frmAdminsLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmClientsLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmClientsLogins.Designer.cs">
+      <DependentUpon>frmClientsLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmTransfersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmTransfersList.Designer.cs">
+      <DependentUpon>frmTransfersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmDeleteClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmDeleteClient.Designer.cs">
+      <DependentUpon>frmDeleteClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmUpdateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmUpdateClient.Designer.cs">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmClientsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmClientsList.Designer.cs">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmAdminsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmAdminsList.Designer.cs">
+      <DependentUpon>frmAdminsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmAddAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmAddAdmin.Designer.cs">
+      <DependentUpon>frmAddAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmUpdateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmUpdateAdmin.Designer.cs">
+      <DependentUpon>frmUpdateAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmDeleteAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAdminForms\frmDeleteAdmin.Designer.cs">
+      <DependentUpon>frmDeleteAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmAddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageClientsForms\frmAddClient.Designer.cs">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmAdminsMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\frmAdminsMainScreen.Designer.cs">
+      <DependentUpon>frmAdminsMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsLogedClient.cs" />
+    <Compile Include="AdminsScreenForms\ManageAccountsForms\frmDeleteAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAccountsForms\frmDeleteAccount.Designer.cs">
+      <DependentUpon>frmDeleteAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAccountsForms\frmAddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAccountsForms\frmAddAccount.Designer.cs">
+      <DependentUpon>frmAddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAccountsForms\frmViewAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminsScreenForms\ManageAccountsForms\frmViewAccounts.Designer.cs">
+      <DependentUpon>frmViewAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmClientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmClientInfo.Designer.cs">
+      <DependentUpon>frmClientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmTransfer.Designer.cs">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmClientAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmClientAccounts.Designer.cs">
+      <DependentUpon>frmClientAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmClientMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmClientMainScreen.Designer.cs">
+      <DependentUpon>frmClientMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmDeposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmDeposit.Designer.cs">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsScreensForms\frmWithdraw.Designer.cs">
+      <DependentUpon>frmWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructColors.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminsScreenForms\frmAdminsLogins.resx">
+      <DependentUpon>frmAdminsLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\frmClientsLogins.resx">
+      <DependentUpon>frmClientsLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\frmTransfersList.resx">
+      <DependentUpon>frmTransfersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageClientsForms\frmDeleteClient.resx">
+      <DependentUpon>frmDeleteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageClientsForms\frmUpdateClient.resx">
+      <DependentUpon>frmUpdateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageClientsForms\frmClientsList.resx">
+      <DependentUpon>frmClientsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAdminForms\frmAddAdmin.resx">
+      <DependentUpon>frmAddAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageClientsForms\frmAddClient.resx">
+      <DependentUpon>frmAddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAdminForms\frmAdminsList.resx">
+      <DependentUpon>frmAdminsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAdminForms\frmDeleteAdmin.resx">
+      <DependentUpon>frmDeleteAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\frmAdminsMainScreen.resx">
+      <DependentUpon>frmAdminsMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAdminForms\frmUpdateAdmin.resx">
+      <DependentUpon>frmUpdateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAccountsForms\frmDeleteAccount.resx">
+      <DependentUpon>frmDeleteAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAccountsForms\frmAddAccount.resx">
+      <DependentUpon>frmAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminsScreenForms\ManageAccountsForms\frmViewAccounts.resx">
+      <DependentUpon>frmViewAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsScreensForms\frmClientInfo.resx">
+      <DependentUpon>frmClientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsScreensForms\frmTransfer.resx">
+      <DependentUpon>frmTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsScreensForms\frmClientAccounts.resx">
+      <DependentUpon>frmClientAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsScreensForms\frmClientMainScreen.resx">
+      <DependentUpon>frmClientMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsScreensForms\frmDeposit.resx">
+      <DependentUpon>frmDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsScreensForms\frmWithdraw.resx">
+      <DependentUpon>frmWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank Logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank App Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bank_Business\Bank_Business.csproj">
+      <Project>{84dc4f8e-e9f4-489c-a3c6-4c569d34f3f6}</Project>
+      <Name>Bank_Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

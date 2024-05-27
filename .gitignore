@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Bank/.vs 
+/Bank/Bank_Presentation/.vs 
+/Bank/Bank_Presentation/bin
+/Bank/Bank_Presentation/obj 
+/Bank_Business/.vs 
+/Bank_Business/bin
+/Bank_Business/obj 
+/Bank_DataAccess/.vs 
+/Bank_DataAccess/bin
+/Bank_DataAccess/obj 
+/Bank_DataAccess/clsSettings.cs
